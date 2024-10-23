@@ -1,6 +1,10 @@
 const inputBox = document.getElementById('enter-task') as HTMLInputElement;
 const listContainer = document.getElementById('list-container');
 
+
+document.getElementById("addTaskButton")!.addEventListener("click", addTask)
+
+
 function addTask() {
     if (!inputBox || !listContainer) return;
     if (inputBox.value === '') {
@@ -15,6 +19,7 @@ function addTask() {
     }
     inputBox.value = '';  
 }
+
 listContainer?.addEventListener("click", function(e) {
     const target = e.target as HTMLElement;
     if (target.tagName === "LI") {
