@@ -1,0 +1,12 @@
+.add{
+    border-radius: 3px;
+    background-color: blueviolet;
+    width: 10%;
+    justify-content: center;
+    display: flex;
+
+}
+
+.add:hover{
+    background-color: rgb(122, 41, 198);
+}
