@@ -1,7 +1,7 @@
 
 import "./style.css"
 
-let taskList = []
+// let taskList = []
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const task = document.createTextNode(inputBox.value)
         console.log(task)
-        const spanList = document.createElement("span")
+        const spanList = document.getElementById("spanList")
         const div = document.createElement("div")
         div.appendChild(task)
-        spanList.appendChild(div)
+        spanList?.appendChild(div)
     })
 });
