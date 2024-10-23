@@ -12,9 +12,5 @@ document.addEventListener('DOMContentLoaded', () => {
         div.appendChild(task)
         spanList.appendChild(div)
 
-        
-
     })
-    
-
 });
